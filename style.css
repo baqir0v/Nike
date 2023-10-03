@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+.navbar{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* align-items: center; */
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar a{
+    font-size: 30px;
+    /* padding-top: 30px; */
+}
+.navbar input{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    color: black;
+    padding-left: 20px;
+}
+.navbar i{
+    font-size:40px ;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+a:hover{
+    color: blue;
+    cursor: pointer;
+}
+i:hover{
+    color: blue;
+    cursor: pointer;
+}
+img:hover{
+    cursor: pointer;
+}
+.other {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+@media screen and (max-width: 1384px) {
+    ul {
+        gap: 10px;
+    }
+
+    .navbar ul a {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    ul {
+        align-items: center;
+    }
+    .navbar ul a {
+        font-size: 20px;
+    }
+
+    .other i {
+        font-size: 20px;
+    }
+
+    .other input {
+        height: 30px;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 443px) {
+    .other input {
+        width: 90px;
+    }
+
+    .other {
+        gap: 10px;
+    }
+}
